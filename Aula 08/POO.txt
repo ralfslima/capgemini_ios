@@ -12,7 +12,7 @@
 // PROTOCOLS - INTERFACE
 /*
     1º Especifica funções obrigatórias.
-    2º Não pode criar atributos/variáveis.
+    2º Interfaces não podem possuir atributos/variáveis, protocols podem.
     3º Permite "herança" múltipla, pois você implementa.
     4º Permite ser utilizado em classes e structs.
  
