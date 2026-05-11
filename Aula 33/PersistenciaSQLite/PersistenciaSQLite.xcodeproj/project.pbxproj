@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF8015F42FB011CC006EE2AE /* PersistenciaTempSQLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8015F32FB011CC006EE2AE /* PersistenciaTempSQLiteApp.swift */; };
+		BF8015F62FB011CC006EE2AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8015F52FB011CC006EE2AE /* ContentView.swift */; };
+		BF8015F82FB011CE006EE2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8015F72FB011CE006EE2AE /* Assets.xcassets */; };
+		BF8015FB2FB011CE006EE2AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8015FA2FB011CE006EE2AE /* Preview Assets.xcassets */; };
+		BF8016052FB011CE006EE2AE /* PersistenciaTempSQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8016042FB011CE006EE2AE /* PersistenciaTempSQLiteTests.swift */; };
+		BF80160F2FB011CE006EE2AE /* PersistenciaTempSQLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80160E2FB011CE006EE2AE /* PersistenciaTempSQLiteUITests.swift */; };
+		BF8016112FB011CE006EE2AE /* PersistenciaTempSQLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8016102FB011CE006EE2AE /* PersistenciaTempSQLiteUITestsLaunchTests.swift */; };
+		BF80161F2FB012CD006EE2AE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80161E2FB012CD006EE2AE /* Person.swift */; };
+		BF8016222FB01746006EE2AE /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = BF8016212FB01746006EE2AE /* GRDB */; };
+		BF8016242FB017AF006EE2AE /* SQLiteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8016232FB017AF006EE2AE /* SQLiteDataStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8016012FB011CE006EE2AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8015E82FB011CC006EE2AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8015EF2FB011CC006EE2AE;
+			remoteInfo = PersistenciaTempSQLite;
+		};
+		BF80160B2FB011CE006EE2AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8015E82FB011CC006EE2AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8015EF2FB011CC006EE2AE;
+			remoteInfo = PersistenciaTempSQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF8015F02FB011CC006EE2AE /* PersistenciaSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenciaSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8015F32FB011CC006EE2AE /* PersistenciaTempSQLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaTempSQLiteApp.swift; sourceTree = "<group>"; };
+		BF8015F52FB011CC006EE2AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF8015F72FB011CE006EE2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8015FA2FB011CE006EE2AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF8016002FB011CE006EE2AE /* PersistenciaSQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenciaSQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8016042FB011CE006EE2AE /* PersistenciaTempSQLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaTempSQLiteTests.swift; sourceTree = "<group>"; };
+		BF80160A2FB011CE006EE2AE /* PersistenciaSQLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenciaSQLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF80160E2FB011CE006EE2AE /* PersistenciaTempSQLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaTempSQLiteUITests.swift; sourceTree = "<group>"; };
+		BF8016102FB011CE006EE2AE /* PersistenciaTempSQLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaTempSQLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF80161E2FB012CD006EE2AE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BF8016232FB017AF006EE2AE /* SQLiteDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8015ED2FB011CC006EE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8016222FB01746006EE2AE /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8015FD2FB011CE006EE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8016072FB011CE006EE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF8015E72FB011CC006EE2AE = {
+			isa = PBXGroup;
+			children = (
+				BF8015F22FB011CC006EE2AE /* PersistenciaTempSQLite */,
+				BF8016032FB011CE006EE2AE /* PersistenciaSQLiteTests */,
+				BF80160D2FB011CE006EE2AE /* PersistenciaSQLiteUITests */,
+				BF8015F12FB011CC006EE2AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8015F12FB011CC006EE2AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8015F02FB011CC006EE2AE /* PersistenciaSQLite.app */,
+				BF8016002FB011CE006EE2AE /* PersistenciaSQLiteTests.xctest */,
+				BF80160A2FB011CE006EE2AE /* PersistenciaSQLiteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8015F22FB011CC006EE2AE /* PersistenciaTempSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				BF8015F32FB011CC006EE2AE /* PersistenciaTempSQLiteApp.swift */,
+				BF8015F52FB011CC006EE2AE /* ContentView.swift */,
+				BF8015F72FB011CE006EE2AE /* Assets.xcassets */,
+				BF8015F92FB011CE006EE2AE /* Preview Content */,
+				BF80161E2FB012CD006EE2AE /* Person.swift */,
+				BF8016232FB017AF006EE2AE /* SQLiteDataStore.swift */,
+			);
+			path = PersistenciaTempSQLite;
+			sourceTree = "<group>";
+		};
+		BF8015F92FB011CE006EE2AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF8015FA2FB011CE006EE2AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF8016032FB011CE006EE2AE /* PersistenciaSQLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8016042FB011CE006EE2AE /* PersistenciaTempSQLiteTests.swift */,
+			);
+			path = PersistenciaSQLiteTests;
+			sourceTree = "<group>";
+		};
+		BF80160D2FB011CE006EE2AE /* PersistenciaSQLiteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF80160E2FB011CE006EE2AE /* PersistenciaTempSQLiteUITests.swift */,
+				BF8016102FB011CE006EE2AE /* PersistenciaTempSQLiteUITestsLaunchTests.swift */,
+			);
+			path = PersistenciaSQLiteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8015EF2FB011CC006EE2AE /* PersistenciaSQLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8016142FB011CE006EE2AE /* Build configuration list for PBXNativeTarget "PersistenciaSQLite" */;
+			buildPhases = (
+				BF8015EC2FB011CC006EE2AE /* Sources */,
+				BF8015ED2FB011CC006EE2AE /* Frameworks */,
+				BF8015EE2FB011CC006EE2AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenciaSQLite;
+			packageProductDependencies = (
+				BF8016212FB01746006EE2AE /* GRDB */,
+			);
+			productName = PersistenciaTempSQLite;
+			productReference = BF8015F02FB011CC006EE2AE /* PersistenciaSQLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF8015FF2FB011CE006EE2AE /* PersistenciaSQLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8016172FB011CE006EE2AE /* Build configuration list for PBXNativeTarget "PersistenciaSQLiteTests" */;
+			buildPhases = (
+				BF8015FC2FB011CE006EE2AE /* Sources */,
+				BF8015FD2FB011CE006EE2AE /* Frameworks */,
+				BF8015FE2FB011CE006EE2AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8016022FB011CE006EE2AE /* PBXTargetDependency */,
+			);
+			name = PersistenciaSQLiteTests;
+			productName = PersistenciaTempSQLiteTests;
+			productReference = BF8016002FB011CE006EE2AE /* PersistenciaSQLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF8016092FB011CE006EE2AE /* PersistenciaSQLiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF80161A2FB011CE006EE2AE /* Build configuration list for PBXNativeTarget "PersistenciaSQLiteUITests" */;
+			buildPhases = (
+				BF8016062FB011CE006EE2AE /* Sources */,
+				BF8016072FB011CE006EE2AE /* Frameworks */,
+				BF8016082FB011CE006EE2AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF80160C2FB011CE006EE2AE /* PBXTargetDependency */,
+			);
+			name = PersistenciaSQLiteUITests;
+			productName = PersistenciaTempSQLiteUITests;
+			productReference = BF80160A2FB011CE006EE2AE /* PersistenciaSQLiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8015E82FB011CC006EE2AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BF8015EF2FB011CC006EE2AE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BF8015FF2FB011CE006EE2AE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BF8015EF2FB011CC006EE2AE;
+					};
+					BF8016092FB011CE006EE2AE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BF8015EF2FB011CC006EE2AE;
+					};
+				};
+			};
+			buildConfigurationList = BF8015EB2FB011CC006EE2AE /* Build configuration list for PBXProject "PersistenciaSQLite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF8015E72FB011CC006EE2AE;
+			packageReferences = (
+				BF8016202FB01746006EE2AE /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
+			productRefGroup = BF8015F12FB011CC006EE2AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8015EF2FB011CC006EE2AE /* PersistenciaSQLite */,
+				BF8015FF2FB011CE006EE2AE /* PersistenciaSQLiteTests */,
+				BF8016092FB011CE006EE2AE /* PersistenciaSQLiteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF8015EE2FB011CC006EE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8015FB2FB011CE006EE2AE /* Preview Assets.xcassets in Resources */,
+				BF8015F82FB011CE006EE2AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8015FE2FB011CE006EE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8016082FB011CE006EE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8015EC2FB011CC006EE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF80161F2FB012CD006EE2AE /* Person.swift in Sources */,
+				BF8016242FB017AF006EE2AE /* SQLiteDataStore.swift in Sources */,
+				BF8015F62FB011CC006EE2AE /* ContentView.swift in Sources */,
+				BF8015F42FB011CC006EE2AE /* PersistenciaTempSQLiteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8015FC2FB011CE006EE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8016052FB011CE006EE2AE /* PersistenciaTempSQLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8016062FB011CE006EE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8016112FB011CE006EE2AE /* PersistenciaTempSQLiteUITestsLaunchTests.swift in Sources */,
+				BF80160F2FB011CE006EE2AE /* PersistenciaTempSQLiteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8016022FB011CE006EE2AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8015EF2FB011CC006EE2AE /* PersistenciaSQLite */;
+			targetProxy = BF8016012FB011CE006EE2AE /* PBXContainerItemProxy */;
+		};
+		BF80160C2FB011CE006EE2AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8015EF2FB011CC006EE2AE /* PersistenciaSQLite */;
+			targetProxy = BF80160B2FB011CE006EE2AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF8016122FB011CE006EE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF8016132FB011CE006EE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8016152FB011CE006EE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PersistenciaTempSQLite/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaSQLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8016162FB011CE006EE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PersistenciaTempSQLite/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaSQLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF8016182FB011CE006EE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaTempSQLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistenciaSQLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersistenciaSQLite";
+			};
+			name = Debug;
+		};
+		BF8016192FB011CE006EE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaTempSQLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistenciaSQLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersistenciaSQLite";
+			};
+			name = Release;
+		};
+		BF80161B2FB011CE006EE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaTempSQLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersistenciaTempSQLite;
+			};
+			name = Debug;
+		};
+		BF80161C2FB011CE006EE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaTempSQLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersistenciaTempSQLite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8015EB2FB011CC006EE2AE /* Build configuration list for PBXProject "PersistenciaSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8016122FB011CE006EE2AE /* Debug */,
+				BF8016132FB011CE006EE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8016142FB011CE006EE2AE /* Build configuration list for PBXNativeTarget "PersistenciaSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8016152FB011CE006EE2AE /* Debug */,
+				BF8016162FB011CE006EE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8016172FB011CE006EE2AE /* Build configuration list for PBXNativeTarget "PersistenciaSQLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8016182FB011CE006EE2AE /* Debug */,
+				BF8016192FB011CE006EE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF80161A2FB011CE006EE2AE /* Build configuration list for PBXNativeTarget "PersistenciaSQLiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF80161B2FB011CE006EE2AE /* Debug */,
+				BF80161C2FB011CE006EE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF8016202FB01746006EE2AE /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF8016212FB01746006EE2AE /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF8016202FB01746006EE2AE /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BF8015E82FB011CC006EE2AE /* Project object */;
+}
