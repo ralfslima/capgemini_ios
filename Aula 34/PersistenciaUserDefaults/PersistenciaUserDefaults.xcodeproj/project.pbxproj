@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF993F412FB33BDF00D7AA7D /* Conceito.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF993F402FB33BDF00D7AA7D /* Conceito.swift */; };
+		BF993F432FB33C6100D7AA7D /* Exercicio01.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF993F422FB33C6100D7AA7D /* Exercicio01.swift */; };
+		BF993F452FB3423000D7AA7D /* Exercicio02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF993F442FB3423000D7AA7D /* Exercicio02.swift */; };
+		BFF784F32FB1F07E000A3223 /* PersistenciaUserDefaultsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF784F22FB1F07E000A3223 /* PersistenciaUserDefaultsApp.swift */; };
+		BFF784F52FB1F07E000A3223 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF784F42FB1F07E000A3223 /* ContentView.swift */; };
+		BFF784F72FB1F085000A3223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF784F62FB1F085000A3223 /* Assets.xcassets */; };
+		BFF784FA2FB1F085000A3223 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF784F92FB1F085000A3223 /* Preview Assets.xcassets */; };
+		BFF785042FB1F086000A3223 /* PersistenciaUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF785032FB1F086000A3223 /* PersistenciaUserDefaultsTests.swift */; };
+		BFF7850E2FB1F086000A3223 /* PersistenciaUserDefaultsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7850D2FB1F086000A3223 /* PersistenciaUserDefaultsUITests.swift */; };
+		BFF785102FB1F086000A3223 /* PersistenciaUserDefaultsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7850F2FB1F086000A3223 /* PersistenciaUserDefaultsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFF785002FB1F086000A3223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF784E72FB1F07E000A3223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF784EE2FB1F07E000A3223;
+			remoteInfo = PersistenciaUserDefaults;
+		};
+		BFF7850A2FB1F086000A3223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF784E72FB1F07E000A3223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF784EE2FB1F07E000A3223;
+			remoteInfo = PersistenciaUserDefaults;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF993F402FB33BDF00D7AA7D /* Conceito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conceito.swift; sourceTree = "<group>"; };
+		BF993F422FB33C6100D7AA7D /* Exercicio01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercicio01.swift; sourceTree = "<group>"; };
+		BF993F442FB3423000D7AA7D /* Exercicio02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercicio02.swift; sourceTree = "<group>"; };
+		BFF784EF2FB1F07E000A3223 /* PersistenciaUserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenciaUserDefaults.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF784F22FB1F07E000A3223 /* PersistenciaUserDefaultsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaUserDefaultsApp.swift; sourceTree = "<group>"; };
+		BFF784F42FB1F07E000A3223 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFF784F62FB1F085000A3223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFF784F92FB1F085000A3223 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFF784FF2FB1F086000A3223 /* PersistenciaUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenciaUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF785032FB1F086000A3223 /* PersistenciaUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaUserDefaultsTests.swift; sourceTree = "<group>"; };
+		BFF785092FB1F086000A3223 /* PersistenciaUserDefaultsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenciaUserDefaultsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF7850D2FB1F086000A3223 /* PersistenciaUserDefaultsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaUserDefaultsUITests.swift; sourceTree = "<group>"; };
+		BFF7850F2FB1F086000A3223 /* PersistenciaUserDefaultsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaUserDefaultsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFF784EC2FB1F07E000A3223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF784FC2FB1F086000A3223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF785062FB1F086000A3223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF993F3F2FB33BB600D7AA7D /* Telas */ = {
+			isa = PBXGroup;
+			children = (
+				BF993F402FB33BDF00D7AA7D /* Conceito.swift */,
+				BF993F422FB33C6100D7AA7D /* Exercicio01.swift */,
+				BF993F442FB3423000D7AA7D /* Exercicio02.swift */,
+			);
+			path = Telas;
+			sourceTree = "<group>";
+		};
+		BFF784E62FB1F07E000A3223 = {
+			isa = PBXGroup;
+			children = (
+				BFF784F12FB1F07E000A3223 /* PersistenciaUserDefaults */,
+				BFF785022FB1F086000A3223 /* PersistenciaUserDefaultsTests */,
+				BFF7850C2FB1F086000A3223 /* PersistenciaUserDefaultsUITests */,
+				BFF784F02FB1F07E000A3223 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFF784F02FB1F07E000A3223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF784EF2FB1F07E000A3223 /* PersistenciaUserDefaults.app */,
+				BFF784FF2FB1F086000A3223 /* PersistenciaUserDefaultsTests.xctest */,
+				BFF785092FB1F086000A3223 /* PersistenciaUserDefaultsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF784F12FB1F07E000A3223 /* PersistenciaUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				BF993F3F2FB33BB600D7AA7D /* Telas */,
+				BFF784F22FB1F07E000A3223 /* PersistenciaUserDefaultsApp.swift */,
+				BFF784F42FB1F07E000A3223 /* ContentView.swift */,
+				BFF784F62FB1F085000A3223 /* Assets.xcassets */,
+				BFF784F82FB1F085000A3223 /* Preview Content */,
+			);
+			path = PersistenciaUserDefaults;
+			sourceTree = "<group>";
+		};
+		BFF784F82FB1F085000A3223 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFF784F92FB1F085000A3223 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFF785022FB1F086000A3223 /* PersistenciaUserDefaultsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF785032FB1F086000A3223 /* PersistenciaUserDefaultsTests.swift */,
+			);
+			path = PersistenciaUserDefaultsTests;
+			sourceTree = "<group>";
+		};
+		BFF7850C2FB1F086000A3223 /* PersistenciaUserDefaultsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF7850D2FB1F086000A3223 /* PersistenciaUserDefaultsUITests.swift */,
+				BFF7850F2FB1F086000A3223 /* PersistenciaUserDefaultsUITestsLaunchTests.swift */,
+			);
+			path = PersistenciaUserDefaultsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFF784EE2FB1F07E000A3223 /* PersistenciaUserDefaults */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF785132FB1F086000A3223 /* Build configuration list for PBXNativeTarget "PersistenciaUserDefaults" */;
+			buildPhases = (
+				BFF784EB2FB1F07E000A3223 /* Sources */,
+				BFF784EC2FB1F07E000A3223 /* Frameworks */,
+				BFF784ED2FB1F07E000A3223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenciaUserDefaults;
+			productName = PersistenciaUserDefaults;
+			productReference = BFF784EF2FB1F07E000A3223 /* PersistenciaUserDefaults.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFF784FE2FB1F086000A3223 /* PersistenciaUserDefaultsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF785162FB1F086000A3223 /* Build configuration list for PBXNativeTarget "PersistenciaUserDefaultsTests" */;
+			buildPhases = (
+				BFF784FB2FB1F086000A3223 /* Sources */,
+				BFF784FC2FB1F086000A3223 /* Frameworks */,
+				BFF784FD2FB1F086000A3223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF785012FB1F086000A3223 /* PBXTargetDependency */,
+			);
+			name = PersistenciaUserDefaultsTests;
+			productName = PersistenciaUserDefaultsTests;
+			productReference = BFF784FF2FB1F086000A3223 /* PersistenciaUserDefaultsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFF785082FB1F086000A3223 /* PersistenciaUserDefaultsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF785192FB1F086000A3223 /* Build configuration list for PBXNativeTarget "PersistenciaUserDefaultsUITests" */;
+			buildPhases = (
+				BFF785052FB1F086000A3223 /* Sources */,
+				BFF785062FB1F086000A3223 /* Frameworks */,
+				BFF785072FB1F086000A3223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF7850B2FB1F086000A3223 /* PBXTargetDependency */,
+			);
+			name = PersistenciaUserDefaultsUITests;
+			productName = PersistenciaUserDefaultsUITests;
+			productReference = BFF785092FB1F086000A3223 /* PersistenciaUserDefaultsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFF784E72FB1F07E000A3223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BFF784EE2FB1F07E000A3223 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BFF784FE2FB1F086000A3223 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BFF784EE2FB1F07E000A3223;
+					};
+					BFF785082FB1F086000A3223 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BFF784EE2FB1F07E000A3223;
+					};
+				};
+			};
+			buildConfigurationList = BFF784EA2FB1F07E000A3223 /* Build configuration list for PBXProject "PersistenciaUserDefaults" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFF784E62FB1F07E000A3223;
+			productRefGroup = BFF784F02FB1F07E000A3223 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFF784EE2FB1F07E000A3223 /* PersistenciaUserDefaults */,
+				BFF784FE2FB1F086000A3223 /* PersistenciaUserDefaultsTests */,
+				BFF785082FB1F086000A3223 /* PersistenciaUserDefaultsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFF784ED2FB1F07E000A3223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF784FA2FB1F085000A3223 /* Preview Assets.xcassets in Resources */,
+				BFF784F72FB1F085000A3223 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF784FD2FB1F086000A3223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF785072FB1F086000A3223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFF784EB2FB1F07E000A3223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF993F432FB33C6100D7AA7D /* Exercicio01.swift in Sources */,
+				BF993F452FB3423000D7AA7D /* Exercicio02.swift in Sources */,
+				BF993F412FB33BDF00D7AA7D /* Conceito.swift in Sources */,
+				BFF784F52FB1F07E000A3223 /* ContentView.swift in Sources */,
+				BFF784F32FB1F07E000A3223 /* PersistenciaUserDefaultsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF784FB2FB1F086000A3223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF785042FB1F086000A3223 /* PersistenciaUserDefaultsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF785052FB1F086000A3223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF7850E2FB1F086000A3223 /* PersistenciaUserDefaultsUITests.swift in Sources */,
+				BFF785102FB1F086000A3223 /* PersistenciaUserDefaultsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFF785012FB1F086000A3223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF784EE2FB1F07E000A3223 /* PersistenciaUserDefaults */;
+			targetProxy = BFF785002FB1F086000A3223 /* PBXContainerItemProxy */;
+		};
+		BFF7850B2FB1F086000A3223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF784EE2FB1F07E000A3223 /* PersistenciaUserDefaults */;
+			targetProxy = BFF7850A2FB1F086000A3223 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BFF785112FB1F086000A3223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFF785122FB1F086000A3223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFF785142FB1F086000A3223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PersistenciaUserDefaults/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaUserDefaults;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFF785152FB1F086000A3223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PersistenciaUserDefaults/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaUserDefaults;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFF785172FB1F086000A3223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaUserDefaultsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistenciaUserDefaults.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersistenciaUserDefaults";
+			};
+			name = Debug;
+		};
+		BFF785182FB1F086000A3223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaUserDefaultsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistenciaUserDefaults.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersistenciaUserDefaults";
+			};
+			name = Release;
+		};
+		BFF7851A2FB1F086000A3223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaUserDefaultsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersistenciaUserDefaults;
+			};
+			name = Debug;
+		};
+		BFF7851B2FB1F086000A3223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Capgemini.PersistenciaUserDefaultsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersistenciaUserDefaults;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFF784EA2FB1F07E000A3223 /* Build configuration list for PBXProject "PersistenciaUserDefaults" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF785112FB1F086000A3223 /* Debug */,
+				BFF785122FB1F086000A3223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF785132FB1F086000A3223 /* Build configuration list for PBXNativeTarget "PersistenciaUserDefaults" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF785142FB1F086000A3223 /* Debug */,
+				BFF785152FB1F086000A3223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF785162FB1F086000A3223 /* Build configuration list for PBXNativeTarget "PersistenciaUserDefaultsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF785172FB1F086000A3223 /* Debug */,
+				BFF785182FB1F086000A3223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF785192FB1F086000A3223 /* Build configuration list for PBXNativeTarget "PersistenciaUserDefaultsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF7851A2FB1F086000A3223 /* Debug */,
+				BFF7851B2FB1F086000A3223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFF784E72FB1F07E000A3223 /* Project object */;
+}
