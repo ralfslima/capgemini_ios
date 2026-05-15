@@ -58,7 +58,11 @@ struct FormPersonView: View {
             
             // Botão para salvar (cadastrar ou alterar)
             Button {
+                // Executar a função para cadastrar ou alterar
+                salvar()
                 
+                // Fechar o formulário
+                dismiss()
             } label: {
                 Text("Salvar")
             }
